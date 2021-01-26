@@ -1,4 +1,4 @@
-
+/*
 var mainB = document.getElementById("main-btn");
 console.log(mainB);
 
@@ -55,3 +55,42 @@ for (let key in userTwo) {
   // console.log(userTwo[key]); // values
   console.log(userTwo.key); // DON'T USE will be undefined
 }
+
+// CALL BACK FUNCTIONS **********
+
+function sayHelloToUser(user) {
+  return `Hey ${user}!`;
+}
+
+const sayHi = (user) => {
+  return `Hello ${user}`;
+}
+sayHi("Martin");
+
+function saySomething(user) {
+  return `Sup ${user}`;
+}
+console.log(saySomething('Ben', sayHelloToUser));
+console.log(saySomething('Ben', sayHi));
+*/
+
+// ADD EVENT LISTENER *****
+const button = document.querySelector('#main-btn');
+const container = document.querySelector('#second-btn');
+
+const whatIsTheId = (event) => {
+  console.log(`YOU CLICKED ${event.target.id}!`);
+
+  if (event.target.id === 'main-btn') {
+    container.innerHTML = 'You clicked the MAIN BUTTON';
+  } else {
+    container.innerHTML = 'You clicked the Second Button';
+  }
+};
+
+button.addEventListener('click', whatIsTheId);
+
+// TARGET `other-btn` and on click, run whatIsTheId
+const button2 = document.querySelector('#second-btn');
+
+button2.addEventListener('click', whatIsTheId);
