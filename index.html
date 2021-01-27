@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>E14 Event-Listeners</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Objs, Dom, Events</title>
   <link rel="stylesheet" href="./styles/main.css">
 </head>
   <body>
@@ -10,12 +13,29 @@
     <header></header>
     <button type="button" value="button" id="main-btn">Click Me!</button>
     <button type="button" value="button" id="second-btn">Click M Too!</button>
+    <div id="container">CLICK A BUTTON TO START</div>
+
+
     <article>
       <header></header>
-      <section></section>
-      <footer></footer>
+      <section>
+<div class="container mt-3 text-center">
+  <div id="instructor-buttons">
+    <button type="button" class="btn btn-primary" id="All">All</button>
+    <button type="button" class="btn btn-secondary" id="Doc">Dr. T</button>
+    <button type="button" class="btn btn-success" id="Aja">Aja</button>
+    <button type="button" class="btn btn-danger" id="Trinity">Trinity</button>
+  </div>
+        <div id="pies" class="d-flex flex-wrap justify-content-around"></div>
+        <hr>
+        <div class="pie-form"></div>
+      </div>
+      </section>
     </article>
+
     <footer></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
